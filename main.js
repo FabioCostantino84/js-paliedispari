@@ -22,7 +22,7 @@ let pcNumber = randomNumberGenerator(5);
  * Genera un numero casuanle da 0 a random
  */
 function randomNumberGenerator(random) {
-    let  randomNumber = Math.floor((Math.random() * random) + 1);
+    let randomNumber = Math.floor((Math.random() * random) + 1);
 
     return randomNumber;
 }
@@ -43,19 +43,19 @@ function calcEvenOdd() {
     if (numberEvenOdd) {
         result = 'pari';
         console.log('la somma è pari');
-        
+
     } else {
         result = 'dispari';
         console.log('la somma è dispari');
     }
     //dichiarare chi ha vinto
-    if(evenOrOdd == result) {
+    if (evenOrOdd == result) {
         console.log('hai vinto');
     } else {
         console.log('hai perso');
     }
     return numberEvenOdd
-    
+
 }
 //let numberEvenOdd = (somNumber % 2 === 0);
 
