@@ -23,5 +23,15 @@ let somNumber = userNumber + pcNumber;
 console.log(somNumber);
 
 //stabilire se è pari o dispari
+let numberEvenOdd = (somNumber % 2 === 0);
+
+if (numberEvenOdd) {
+    result = true;
+    console.log('la somma è pari');
+    
+} else {
+    result = false;
+    console.log('la somma è dispari');
+}
 
 //dichiarare chi ha vinto
