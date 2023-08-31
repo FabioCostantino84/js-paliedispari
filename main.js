@@ -35,22 +35,29 @@ let somNumber = userNumber + pcNumber;
 console.log(somNumber);
 
 //stabilire se è pari o dispari
-let numberEvenOdd = (somNumber % 2 === 0);
+let numberEvenOdd = calcEvenOdd();
 
-if (numberEvenOdd) {
-    result = 'pari';
-    console.log('la somma è pari');
+function calcEvenOdd() {
+    let numberEvenOdd = (somNumber % 2 === 0);
+
+    if (numberEvenOdd) {
+        result = 'pari';
+        console.log('la somma è pari');
+        
+    } else {
+        result = 'dispari';
+        console.log('la somma è dispari');
+    }
+    //dichiarare chi ha vinto
+    if(evenOrOdd == result) {
+        console.log('hai vinto');
+    } else {
+        console.log('hai perso');
+    }
+    return numberEvenOdd
     
-} else {
-    result = 'dispari';
-    console.log('la somma è dispari');
 }
+//let numberEvenOdd = (somNumber % 2 === 0);
 
 
-if(evenOrOdd == result) {
-    console.log('hai vinto');
-} else {
-    console.log('hai perso');
-}
 
-//dichiarare chi ha vinto
