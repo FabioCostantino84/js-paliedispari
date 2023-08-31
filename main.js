@@ -1,5 +1,3 @@
-console.log('hello world');
-
 /* 
 
 Pari e Dispari
@@ -9,8 +7,12 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 */
 
 //utente sceglie pari o dispari
+let evenOrOdd = prompt('write even or odd');
+console.log(evenOrOdd);
 
 //utente sceglie un numero da 1 a 5
+let userNumber = prompt('write a number from 1 to 5');
+console.log(userNumber);
 
 //generare un numero random da 1 a 5 per il computer
 
