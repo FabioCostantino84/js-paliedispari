@@ -15,6 +15,8 @@ let userNumber = prompt('write a number from 1 to 5');
 console.log(userNumber);
 
 //generare un numero random da 1 a 5 per il computer
+let pcNumber = Math.floor((Math.random()* 6)+1);
+console.log(pcNumber);
 
 //sommare il numero scelto da utente a quello random del computer
 
