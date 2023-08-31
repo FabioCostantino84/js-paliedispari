@@ -15,7 +15,19 @@ let userNumber = (4); //prompt('write a number from 1 to 5');
 console.log(userNumber);
 
 //generare un numero random da 1 a 5 per il computer
-let pcNumber = Math.floor((Math.random()* 6)+1);
+
+let pcNumber = randomNumberGenerator(5);
+
+/**
+ * Genera un numero casuanle da 0 a random
+ */
+function randomNumberGenerator(random) {
+    let  randomNumber = Math.floor((Math.random() * random) + 1);
+
+    return randomNumber;
+}
+
+//let pcNumber = Math.floor((Math.random()* 5)+1);
 console.log(pcNumber);
 
 //sommare il numero scelto da utente a quello random del computer
@@ -26,12 +38,19 @@ console.log(somNumber);
 let numberEvenOdd = (somNumber % 2 === 0);
 
 if (numberEvenOdd) {
-    result = true;
+    result = 'pari';
     console.log('la somma è pari');
     
 } else {
-    result = false;
+    result = 'dispari';
     console.log('la somma è dispari');
+}
+
+
+if(evenOrOdd == result) {
+    console.log('hai vinto');
+} else {
+    console.log('hai perso');
 }
 
 //dichiarare chi ha vinto
